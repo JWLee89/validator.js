@@ -6,7 +6,7 @@
 
     /***
      * Validator.prototype Constructor 함수
-     * @param input Validation 대상인 데이터
+     * @param input Validation 대상 데이터
      * */
     function Validator(input) {
         if (!(this instanceof Validator)) {
@@ -734,7 +734,7 @@
         });
     };
 
-    // Validator 가 global space 에 있으면, 추가
+    // Validator 가 global space 에 존재하지 않으면 추가
     if (!window.Validator) {
         window.Validator = Validator;
         if (!window._v) {
